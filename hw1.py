@@ -71,7 +71,7 @@ def getByFilter(frame):
     return lowFilter(tempFrame), gaussianFilter(tempFrame), highFilter(tempFrame)
 
 def add_description(rls):
-    descriptions = ['Origin', 'GreyScale', 'Gray Level Mapping', 'Reverse', 'Power Law', 'Equalize Histogram', 'Low Filter', 'Gaussian Filter', 'High Filter']
+    descriptions = ['Origin', 'GrayScale', 'Gray Level Mapping', 'Reverse', 'Power Law', 'Equalize Histogram', 'Low Filter', 'Gaussian Filter', 'High Filter']
     for i in range(len(descriptions)):
         cv2.putText(rls, descriptions[i], ((i%3)*480, int(i/3)*270+30), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2, cv2.LINE_AA, False)
 
